@@ -1,0 +1,166 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/zJPjyMC/To-Kill-a-Mockingbird.jpg",
+        "review": "One of the most cherished stories of all time, To Kill a Mockingbird has been translated into more than forty languages, sold more than forty million copies worldwide, served as the basis for an enormously popular motion picture, and was voted one of the best novels of the twentieth century by librarians across the country. A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl, as her father—a crusading local lawyer—risks everything to defend a black man unjustly accused of a terrible crime.",
+        "totalPages": 281,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "classic",
+            "race",
+            "law",
+            "southern",
+            "coming-of-age"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 2,
+        "bookName": "Nineteen Eighty-Four",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/WyykC2d/Nineteen-Eighty-Four.jpg",
+        "review": "The story takes place in an imagined future in the year 1984, when much of the world is in perpetual war. Great Britain, now known as Airstrip One, has become a province of the totalitarian superstate Oceania, which is led by Big Brother, a dictatorial leader supported by an intense cult of personality manufactured by the Party's Thought Police. Through the Ministry of Truth, the Party engages in omnipresent government surveillance, historical negationism, and constant propaganda to persecute individuality and independent thinking.",
+        "totalPages": 328,
+        "rating": 4.7,
+        "category": "Fiction",
+        "tags": [
+            "dystopian",
+            "totalitarianism",
+            "surveillance",
+            "political"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/R60vcxL/The-Great-Gatsby.jpg",
+        "review": "A youthful romance Fitzgerald had with socialite Ginevra King, and the riotous parties he attended on Long Island's North Shore in 1922 inspired the novel. Following a move to the French Riviera, he completed a rough draft in 1924. He submitted the draft to editor Maxwell Perkins, who persuaded Fitzgerald to revise the work over the following winter. After his revisions, Fitzgerald was satisfied with the text, but remained ambivalent about the book's title and considered several alternatives. The final title he desired was Under the Red, White, and Blue. Painter Francis Cugat's final cover design impressed Fitzgerald who incorporated a visual element from the art into the novel.",
+        "totalPages": 180,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "romance",
+            "wealth",
+            "society",
+            "1920s"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/MGtZDsK/The-Catcher-in-the-Rye.jpg",
+        "review": "Through circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for three days. The boy himself is at once too simple and too complex for us to make any final comment about him or his story. Perhaps the safest thing we can say about Holden is that he was born in the world not just strongly attracted to beauty but, almost, hopelessly impaled on it.",
+        "totalPages": 224,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": [
+            "adolescence",
+            "alienation",
+            "identity",
+            "rebellion"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/F5ttygb/The-Lord-of-the-Rings.jpg",
+        "review": "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins.",
+        "totalPages": 1178,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "epic",
+            "adventure",
+            "magic",
+            "elves",
+            "dwarves"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1954
+    },
+    {
+        "bookId": 6,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/378TNtv/Pride-and-Prejudice.jpg",
+        "review": "Few have failed to be charmed by the witty and independent spirit of Elizabeth Bennet in Austen’s beloved classic Pride and Prejudice. When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited; he is indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows us the folly of judging by first impressions and superbly evokes the friendships, gossip and snobberies of provincial middle-class life.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "romance",
+            "social satire",
+            "regency era",
+            "family"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 7,
+        "bookName": "Moby-Dick",
+        "author": "Herman Melville",
+        "image": "https://i.ibb.co/3h3Wvtw/Moby-Dick.jpg",
+        "review": "The book is sailor Ishmael's narrative of the obsessive quest of Ahab, captain of the whaling ship Pequod, for revenge on Moby Dick, the giant white sperm whale that on the ship's previous voyage bit off Ahab's leg at the knee. A contribution to the literature of the American Renaissance, its reputation as a Great American Novel was established only in the 20th century, after the centennial of its author's birth.",
+        "totalPages": 624,
+        "rating": 4.2,
+        "category": "Fiction",
+        "tags": [
+            "adventure",
+            "whaling",
+            "obsession",
+            "symbolism"
+        ],
+        "publisher": "Harper & Brothers",
+        "yearOfPublishing": 1851
+    },
+    {
+        "bookId": 8,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/Xjnt8sL/The-Hobbit.jpg",
+        "review": "In this fantasy classic, master storyteller J.R.R. Tolkein creates a bewitching world filled with delightful creatures and thrilling dangers. Narrator Rob Inglis will hold listeners of all ages spellbound with his skillful portrayal of hobbits, dwarves, and enchanted beasts.",
+        "totalPages": 310,
+        "rating": 4.7,
+        "category": "Fantasy",
+        "tags": [
+            "adventure",
+            "quest",
+            "dragon",
+            "hobbits"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 9,
+        "bookName": "Frankenstein",
+        "author": "Mary Shelley",
+        "image": "https://i.ibb.co/t4nzZLB/Frankenstein.jpg",
+        "review": "Narrator Dan Stevens (Downton Abbey) presents an uncanny performance of Mary Shelley's timeless gothic novel, an epic battle between man and monster at its greatest literary pitch. In trying to create life, the young student Victor Frankenstein unleashes forces beyond his control, setting into motion a long and tragic chain of events that brings Victor to the very brink of madness. How he tries to destroy his creation, as it destroys everything Victor loves, is a powerful story of love, friendship, scientific hubris, and horror.",
+        "totalPages": 280,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "science fiction",
+            "horror",
+            "morality",
+            "ambition"
+        ],
+        "publisher": "Lackington, Hughes, Harding, Mavor & Jones",
+        "yearOfPublishing": 1818
+    }
+]
