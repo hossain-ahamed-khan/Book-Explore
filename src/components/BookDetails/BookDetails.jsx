@@ -10,12 +10,12 @@ const BookDetails = () => {
 
     const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
     return (
-        <div className="flex gap-8 mt-8">
+        <div className="flex gap-12 mt-8">
             <div className="w-1/2 bg-[#1313130D] rounded-2xl">
                 <img className="w-9/12 mx-auto py-16" src={image} alt="" />
             </div>
 
-            <div className="w-1/2 border">
+            <div className="w-1/2">
                 <h1 className="text-[#131313] text-4xl font-bold">{bookName}</h1>
                 <p className="text-[#131313CC] text-xl font-medium my-4">By: {author}</p>
                 <p className="text-[#131313CC] text-xl font-medium py-3 border-y-2">{category}</p>
@@ -28,10 +28,29 @@ const BookDetails = () => {
                         }
                     </span>
                 </div>
-                <p className="border-t-2 text-[#131313B3] text-base font-normal pt-4">Number of Pages: {totalPages}</p>
-                <p className="text-[#131313B3] text-base font-normal pt-2">Publisher: {publisher}</p>
-                <p className="text-[#131313B3] text-base font-normal pt-2">Year of Publishing: {yearOfPublishing}</p>
-                <p className="text-[#131313B3] text-base font-normal pt-2">Rating: {rating}</p>
+
+                <div className="border-t-2 text-[#131313B3] text-base font-normal pt-4">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td className="pr-12 pb-2">Number of Pages:</td>
+                                <td className="text-[#131313] text-base font-semibold pb-2">{totalPages}</td>
+                            </tr>
+                            <tr>
+                                <td className="pr-12 pb-2">Publisher:</td>
+                                <td className="text-[#131313] text-base font-semibold pb-2">{publisher}</td>
+                            </tr>
+                            <tr>
+                                <td className="pr-12 pb-2">Year of Publishing:</td>
+                                <td className="text-[#131313] text-base font-semibold pb-2">{yearOfPublishing}</td>
+                            </tr>
+                            <tr>
+                                <td className="pr-12 pb-2">Rating:</td>
+                                <td className="text-[#131313] text-base font-semibold pb-2">{rating}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <div className="pt-4">
                     <button className="text-[#131313] text-lg font-semibold px-4 py-2 border rounded-lg mr-4">Read</button>
