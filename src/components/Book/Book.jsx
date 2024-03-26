@@ -1,25 +1,33 @@
-
+import PropTypes from 'prop-types';
+import { FaRegStar } from "react-icons/fa";
 
 const Book = ({ book }) => {
     const { bookName, author, image, rating, category, tags } = book;
     return (
         <div>
             <div className="card border border-[#13131326] rounded-2xl">
-                <figure className="w-11/12 h-72 mx-auto mt-6 bg-[#F3F3F3]"><img className="w-2/4 h-3/4 mx-auto" src={image} alt="Shoes" /></figure>
+                <figure className="mx-7 my-6 py-9 bg-[#F3F3F3]"><img className="w-6/12" src={image} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <div>
-                        {tags}
+                    <div className='flex flex-wrap gap-2'>
+                        {
+                            tags.map((tag, index) => <p key={index} className='text-[#23BE0A] text-base font-medium bg-[#23BE0A0D] px-3 py-1 rounded-3xl'>{tag}</p>)
+                        }
                     </div>
-                    <h2 className="card-title">{bookName}</h2>
-                    <p>By: {author}</p>
-                    <div className="flex justify-between">
+                    <h2 className="card-title text-[#131313] text-2xl font-bold mt-3 mb-1">{bookName}</h2>
+                    <p className='text-[#131313CC] text-base font-medium pb-3'>By: {author}</p>
+                    <div className="flex justify-between border-t-2 border-dashed pt-5 text-[#131313CC] text-base font-medium">
                         <p>{category}</p>
-                        <p>{rating} <span>stars</span></p>
+                        <p className='flex justify-end items-center gap-1.5'>{rating} <span><FaRegStar />
+                        </span></p>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+
+Book.propTypes = {
+    book: PropTypes.object
+}
 
 export default Book;
