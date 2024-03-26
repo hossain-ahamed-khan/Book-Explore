@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import { SlLocationPin } from "react-icons/sl";
+import { HiOutlineUsers } from "react-icons/hi2";
+import { MdOutlineFindInPage } from "react-icons/md";
 
 const ReadBook = ({ readBook }) => {
     const { bookName, author, image, totalPages, rating, category, tags, publisher, yearOfPublishing } = readBook;
@@ -7,8 +10,8 @@ const ReadBook = ({ readBook }) => {
             <div className="card card-side border border-[#13131326] mb-6">
                 <figure className='bg-[#1313130D] w-60'><img className='w-32 h-44' src={image} alt="Movie" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{bookName}</h2>
-                    <p>By: {author}</p>
+                    <h1 className="card-title text-[#131313] text-2xl font-bold">{bookName}</h1>
+                    <p className='text-[#131313CC] text-base font-medium'>By: {author}</p>
                     <div className="text-[#131313] text-base font-bold flex items-center gap-3 py-4">
                         <span>Tag</span>
                         <span className='flex flex-wrap gap-2'>
@@ -17,13 +20,15 @@ const ReadBook = ({ readBook }) => {
                             }
                         </span>
                     </div>
-                    <p>Year of Publishing: {yearOfPublishing}</p>
-                    <p>Publisher: {publisher}</p>
-                    <p>Page {totalPages}</p>
-                    <div className="card-actions justify-start gap-7">
-                        <button className="btn btn-primary">Category: {category}</button>
-                        <button className="btn btn-warning">Rating: {rating}</button>
-                        <button className="btn btn-success">View Details</button>
+                    <p className='flex items-center gap-2 text-[#13131399] text-base font-normal'><SlLocationPin />Year of Publishing: {yearOfPublishing}</p>
+                    <div className='w-1/2 flex justify-start'>
+                        <p className='flex items-center gap-2 text-[#13131399] text-base font-normal'><HiOutlineUsers />Publisher: {publisher}</p>
+                        <p className='flex items-center gap-2 text-[#13131399] text-base font-normal'><MdOutlineFindInPage />Page {totalPages}</p>
+                    </div>
+                    <div className="card-actions justify-start gap-7 mt-3">
+                        <button className="bg-[#328EFF26] text-[#328EFF] text-base font-normal px-6 py-2 rounded-3xl">Category: {category}</button>
+                        <button className="bg-[#FFAC3326] text-[#FFAC33] text-base font-normal px-6 py-2 rounded-3xl">Rating: {rating}</button>
+                        <button className=" bg-[#23BE0A] text-white text-base font-normal px-6 py-2 rounded-3xl">View Details</button>
                     </div>
                 </div>
             </div>
