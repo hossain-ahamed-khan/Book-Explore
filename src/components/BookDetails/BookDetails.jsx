@@ -2,15 +2,18 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveReadBooks } from "../../utility/localStorage";
 
 const BookDetails = () => {
 
     const books = useLoaderData();
     const { id } = useParams();
-    const book = books.find(book => book.bookId == id);
+    const idInt = parseInt(id);
+    const book = books.find(book => book.bookId == idInt);
     const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
 
     const handleRead = () => {
+        saveReadBooks(idInt);
         toast("read read read");
     }
 
