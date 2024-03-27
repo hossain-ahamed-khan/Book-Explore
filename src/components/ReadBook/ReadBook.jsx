@@ -2,9 +2,10 @@ import PropTypes from 'prop-types';
 import { SlLocationPin } from "react-icons/sl";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { MdOutlineFindInPage } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
 
 const ReadBook = ({ readBook }) => {
-    const { bookName, author, image, totalPages, rating, category, tags, publisher, yearOfPublishing } = readBook;
+    const { bookId, bookName, author, image, totalPages, rating, category, tags, publisher, yearOfPublishing } = readBook;
     return (
         <div>
             <div className="card card-side border border-[#13131326] mb-6">
@@ -28,7 +29,10 @@ const ReadBook = ({ readBook }) => {
                     <div className="card-actions justify-start gap-7 mt-3">
                         <button className="bg-[#328EFF26] text-[#328EFF] text-base font-normal px-6 py-2 rounded-3xl">Category: {category}</button>
                         <button className="bg-[#FFAC3326] text-[#FFAC33] text-base font-normal px-6 py-2 rounded-3xl">Rating: {rating}</button>
-                        <button className=" bg-[#23BE0A] text-white text-base font-normal px-6 py-2 rounded-3xl">View Details</button>
+                        <NavLink to={`/book/${bookId}`}>
+                            <button className=" bg-[#23BE0A] hover:bg-[#3e8f32] text-white text-base font-normal px-6 py-2 rounded-3xl">View Details</button>
+                        </NavLink>
+
                     </div>
                 </div>
             </div>
