@@ -1,29 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link, useLoaderData } from "react-router-dom";
-import { getReadBook } from "../../utility/localStorage";
-import ReadBook from "../ReadBook/ReadBook";
+import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
-    const books = useLoaderData();
-
-    const [readBooks, setReadBooks] = useState([]);
-
-    useEffect(() => {
-        const storedBookIds = getReadBook();
-
-        if (books.length > 0) {
-            const booksRead = [];
-            for (const id of storedBookIds) {
-                const book = books.find(book => book.bookId === id);
-                if (book) {
-                    booksRead.push(book);
-                }
-            }
-
-            setReadBooks(booksRead);
-        }
-    }, [])
+    const [tabIndex, setTabIndex] = useState(0);
     return (
         <>
             <div className="w-full h-24 my-6 bg-[#1313130D] rounded-2xl flex items-center justify-center">
@@ -42,15 +22,10 @@ const ListedBooks = () => {
             </div>
 
             <div role="tablist" className="tabs tabs-lifted tabs-lg mb-6">
-                <Link role="tab" className="tab tab-active active">Read Books</Link>
-                <Link role="tab" className="tab">Wishlist Books</Link>
+                <Link onClick={() => setTabIndex(0)} to="" role="tab" className={`tab ${tabIndex === 0 ? 'tab-active active' : ''}`}>Read Books</Link>
+                <Link onClick={() => setTabIndex(1)} to={`wishlist-books`} role="tab" className={`tab ${tabIndex === 1 ? 'tab-active active' : ''}`}>Wishlist Books</Link>
             </div>
-
-            <div>
-                {
-                    readBooks.map(readBook => <ReadBook key={readBook.bookId} readBook={readBook}></ReadBook>)
-                }
-            </div>
+            <Outlet></Outlet>
         </>
     );
 };

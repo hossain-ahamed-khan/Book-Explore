@@ -23,7 +23,9 @@ const Header = () => {
                     <ul className="flex gap-3">
                         <li className="mr-2"><NavLink to="/">Home</NavLink></li>
                         <li className="mr-2"><NavLink to="/listed-books">Listed Books</NavLink></li>
-                        <li className=""><NavLink to="/pages-to-read">Pages to Read</NavLink></li>
+                        <li className="mr-2"><NavLink to="/pages-to-read">Pages to Read</NavLink></li>
+                        <li className="mr-2"><NavLink to="/ratings">Ratings</NavLink></li>
+                        <li className="mr-2"><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
