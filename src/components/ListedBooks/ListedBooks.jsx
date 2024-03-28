@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getReadBook } from "../../utility/localStorage";
 import ReadBook from "../ReadBook/ReadBook";
 
@@ -39,6 +39,11 @@ const ListedBooks = () => {
                         <li><a>Publisher year</a></li>
                     </ul>
                 </details>
+            </div>
+
+            <div role="tablist" className="tabs tabs-lifted tabs-lg mb-6">
+                <Link role="tab" className="tab tab-active active">Read Books</Link>
+                <Link role="tab" className="tab">Wishlist Books</Link>
             </div>
 
             <div>
