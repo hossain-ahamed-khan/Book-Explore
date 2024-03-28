@@ -22,7 +22,7 @@ const ReadBooks = () => {
 
             setReadBooks(booksRead);
         }
-    }, [])
+    }, []);
 
     return (
 
